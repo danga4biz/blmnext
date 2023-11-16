@@ -1,0 +1,11 @@
+
+.header-wrapper
+{
+clear: both;
+		width: 100%;
+float: left;
+/*overflow: auto;*/
+display: inline-block;
+box-sizing: border-box;
+		padding: 0%
+}
