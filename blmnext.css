@@ -207,13 +207,13 @@
 /************************************************************************************************/
 .main-wrapper
 {
-clear: both;
-		width: 100%;
-float: left;
+	clear: both;
+	width: 100%;
+	float: left;
 /*overflow: auto;*/
-display: inline-block;
-box-sizing: border-box;
-		padding: 0%
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 0%
 }
 
 
