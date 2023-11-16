@@ -144,42 +144,6 @@
 <!--		font-family: var(--topLineWrapper-TXT-font-family, var(--root-font-family, ))-->
 	}
 
-/*********************************** COMMENTS topLineLeft ***************************************/
-/* 15-9-2023																					*/
-/*	remove float: left because it is already provided by the class element-wrapper				*/
-/*																								*/
-/*********************************** COMMENTS topLineLeft ***************************************/
-	#topLineLeft
-	{
-/*		float: left;*/
-		width: 50%;
-	}
-
-/*********************************** COMMENTS topLineRight **************************************/
-/* 15-9-2023																					*/
-/*	remove float: left because it is already provided by the class element-wrapper				*/
-/*																								*/
-/* 1-9-2022																						*/
-/*	float right ensure sections containing twitter follow button is shown at the right side		*/
-/*********************************** COMMENTS topLineRight **************************************/
-	#topLineRight
-	{
-		float: right;
-	}
-
-/*********************************** COMMENTS topLineMiddle *************************************/
-/* 15-9-2023																					*/
-/*	remove float: left because it is already provided by the class element-wrapper				*/
-/*																								*/
-/* 1-9-2022																						*/
-/*	float right ensure sections containing twitter follow button is shown at the right side		*/
-/*********************************** COMMENTS topLineMiddle *************************************/
-	#topLineMiddle
-	{
-/*		float: left;*/
-	}
-
-
 /****************************** COMMENTS main-wrapper *******************************************/
 /* 26-8-2023                                                                                    */
 /*  overflow should be removed because it creates scroll-bar                                    */
@@ -236,6 +200,48 @@
 <!--		font-family: var(--centerBarWrapper-TXT-font-family, var(--root-font-family, ))-->
  	}
 
+
+/************************** BEGIN TEMPLATE-SKIN CSS SETTINGS ************************************/
+/************************************************************************************************/
+/* CSS settings for the DIV's that are within template-skin										*/
+/*	They are here for completeness and documentation											*/
+/************************************************************************************************/
+/*********************************** COMMENTS topLineLeft ***************************************/
+/* 15-9-2023																					*/
+/*	remove float: left because it is already provided by the class element-wrapper				*/
+/*																								*/
+/*********************************** COMMENTS topLineLeft ***************************************/
+	#topLineLeft
+	{
+/*		float: left;*/
+		width: 50%;
+	}
+
+/*********************************** COMMENTS topLineRight **************************************/
+/* 15-9-2023																					*/
+/*	remove float: left because it is already provided by the class element-wrapper				*/
+/*																								*/
+/* 1-9-2022																						*/
+/*	float right ensure sections containing twitter follow button is shown at the right side		*/
+/*********************************** COMMENTS topLineRight **************************************/
+	#topLineRight
+	{
+		float: right;
+	}
+
+/*********************************** COMMENTS topLineMiddle *************************************/
+/* 15-9-2023																					*/
+/*	remove float: left because it is already provided by the class element-wrapper				*/
+/*																								*/
+/* 1-9-2022																						*/
+/*	float right ensure sections containing twitter follow button is shown at the right side		*/
+/*********************************** COMMENTS topLineMiddle *************************************/
+	#topLineMiddle
+	{
+/*		float: left;*/
+	}
+
+
 /************************** COMMENTS centerBarLeft ********************************** 23-7-2023 */
 /* 5-10-2023																					*/
 /*	remove background collor lightgreen, this is the color surrounding the post page			*/
@@ -274,3 +280,10 @@
 		width: 65%;
 /*background: yellow;*/
 	}
+
+/************************************************************************************************/
+/* CSS settings for the DIV's that are within template-skin										*/
+/*	They are here for completeness and documentation											*/
+/************************************************************************************************/
+/************************** END TEMPLATE-SKIN CSS SETTINGS **************************************/
+
