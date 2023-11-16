@@ -215,7 +215,7 @@
 /*********************************** COMMENTS topLineLeft ***************************************/
 	#topLineLeft
 	{
-/*		float: left;*/
+		float: left;
 		width: 50%;
 	}
 
@@ -240,7 +240,7 @@
 /*********************************** COMMENTS topLineMiddle *************************************/
 	#topLineMiddle
 	{
-/*		float: left;*/
+		float: left;
 	}
 
 
@@ -253,7 +253,7 @@
 	#centerBarLeft 
 	{
 		float: left;
-		width: 15%;
+		width: 10%;
 /*background: lightgreen;*/
 	}
 
@@ -279,7 +279,7 @@
 	#centerBarMiddle
 	{
 		float: left;
-		width: 65%;
+		width: 70%;
 /*background: yellow;*/
 	}
 
