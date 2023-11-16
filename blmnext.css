@@ -53,6 +53,7 @@
 	background-color: var(--topLineWrapper-BG-color, var(--root-BG-color, white ));
 <!--		color: var(--topLineWrapper-TXT-color);-->
 <!--		font-family: var(--topLineWrapper-TXT-font-family, var(--root-font-family, ))-->
+background-color: red;
 	}
 
 .header-wrapper
@@ -65,4 +66,5 @@
 	box-sizing: border-box;
 	padding: 0%;
 background-color: var(--topLineWrapper-BG-color, var(--root-BG-color, white ));
+background-color: green;
 }
