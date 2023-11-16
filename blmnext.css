@@ -206,6 +206,8 @@
 /* CSS settings for the DIV's that are within template-skin										*/
 /*	They are here for completeness and documentation											*/
 /************************************************************************************************/
+
+
 /*********************************** COMMENTS topLineLeft ***************************************/
 /* 15-9-2023																					*/
 /*	remove float: left because it is already provided by the class element-wrapper				*/
