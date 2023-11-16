@@ -28,16 +28,14 @@
 
 /*		--container-items-BG-color: #3AAFA9;*/
 /*		--container-items-BG-color: #2496B2;*/
-		--container-items-BG-color: #3399cc;
+	--container-items-BG-color: #3399cc;
 
 	--container-items-TXT-color: White;
 
 	--topMenuFlexWrapper-BG-color: #D4E4F7;
 
-/*	--topLineWrapper-BG-color: #D4E4F7;*/
+	--topLineWrapper-BG-color: #D4E4F7;
 
-	--topLineWrapper-BG-color: green;
-	
 	--bottomLineWrapper-BG-color: #D4E4F7;
 
 	--centerBarWrapper-BG-color: #D4E4F7;
@@ -50,11 +48,27 @@
 
 }
 
-#topLineWrapper
-{
-	background-color: var(--topLineWrapper-BG-color, var(--root-BG-color, white ));
-}
-
+/****************************** COMMENTS header-wrapper *****************************************/
+/* 26-8-2023                                                                                    */
+/*  overflow should be removed because it creates scroll-bar                                    */
+/*                                                                                              */
+/* 29-6-2023                                                                                	*/
+/*  replaced whole block in wrappers with header-wrapper                                    	*/
+/*																								*/
+/*	'clear: both' ensures that when two elements run into each other 							*/
+/*		they will not touch each others settings 												*/
+/*                                                                                          	*/
+/* 18-7-2023                                                                                	*/
+/*  it is not clear whether 'overflow: auto' really has a purpose                           	*/
+/*                                                                                          	*/
+/* 21-7-2023                                                                               		*/
+/*	'padding: 0%' ensures the topMenuBar-elements are placed directly at the borders        	*/
+/*		padding is in the topMenuBar-elements via element-wrapper	                        	*/
+/*                                                                                          	*/
+/* 25-7-2023																					*/
+/*	'box-sizing: border-box' on an element ensures padding + border								*/
+/*		are included in the width and height													*/
+/************************************************************************************************/
 .header-wrapper
 {
 	clear: both;
@@ -62,5 +76,163 @@
 	float: left;
 	display: inline-block;
 	box-sizing: border-box;
-	padding: 0%;
+	padding: 0%
 }
+
+
+/****************************** COMMENTS element-wrapper ****************************************/
+/* 21-7-2023                                                                                	*/
+/*  'padding: 0.5%' ensures the Column is shown even when it contains no text nor value     	*/
+/*  'min-height: 20px' also ensures the Column is shown                                     	*/
+/*                                                                                          	*/
+/* 25-7-2023																					*/
+/*	'box-sizing: border-box' on an element ensures padding + border								*/
+/*		are included in the width and height													*/
+/*																								*/
+/* REMARK: CLASS handles the CSS layout of the topMenuBarLeftColumn				            	*/
+/************************************************************************************************/
+.element-wrapper
+{
+    float: left;
+	padding:  0.5%;
+	box-sizing: border-box;
+}
+
+/****************************** COMMENTS topLineWrapper *****************************************/
+/* 19-10-2023																					*/
+/*	change color, background, font settings														*/
+/*		added variables for topLineWrapper														*/
+/*																								*/
+/* 29-6-2023																					*/
+/*	replaced whole block with header-wrapper													*/
+/*																								*/
+/* 25-8-2022 added																				*/
+/*																								*/
+/*	- overflow: auto deals with the collapsing parent											*/
+/*	to avoid the float elements appear outside their parent										*/
+/*	or use <div style='clear:both;'/>															*/
+/*		SEE: http://css-tricks.com/all-about-floats/											*/
+/*		SEE: http://www.sitepoint.com/simple-clearing-of-floats/								*/
+/*	- ??float: left eliminates the adding of gadgets in layout ??								*/
+/*	- float forces height of container to height of longest column								*/
+/*	- clear both ensures the topLineWrapper is not influenced by floats in						*/
+/*		previous elements, SEE: the-mystery-of-css-float-property								*/
+/*	- display: inline-block to ensure the middle column fits between the two floats				*/
+/*		SEE: http://thinkvitamin.com/design/everything-you-know-about-clearfix-is-wrong/		*/
+/*																								*/
+/*	- removed white borderline topLineWrapper													*/
+/*	- removed font-size: 80%																	*/
+/*	- added TXT.Font																			*/
+/*																								*/
+/*	1-9-2022																					*/
+/*	- removed padding from topLineLeft, topLineMiddle and topLineRight							*/
+/*		and placed padding in topLineWrapper													*/
+/*	- float: left ensures the background color is shown											*/
+/*	- padding creates a scroll bar a the bottom, eliminate by using box-sizing					*/
+/*		SEE: https://www.w3schools.com/css/css3_box-sizing.asp									*/
+/*																								*/
+/****************************** COMMENTS topLineWrapper *****************************************/
+	#topLineWrapper
+	{
+		background: $(topLineWrapper.BG.Color);
+		color: $(topLineWrapper.TXT.Color);
+		font: $(topLineWrapper.TXT.Font);
+
+		background-color: var(--topLineWrapper-BG-color, var(--root-BG-color, white ));
+<!--		color: var(--topLineWrapper-TXT-color);-->
+<!--		font-family: var(--topLineWrapper-TXT-font-family, var(--root-font-family, ))-->
+	}
+
+/*********************************** COMMENTS topLineLeft ***************************************/
+/* 15-9-2023																					*/
+/*	remove float: left because it is already provided by the class element-wrapper				*/
+/*																								*/
+/*********************************** COMMENTS topLineLeft ***************************************/
+	#topLineLeft
+	{
+/*		float: left;*/
+		width: 50%;
+	}
+
+/*********************************** COMMENTS topLineRight **************************************/
+/* 15-9-2023																					*/
+/*	remove float: left because it is already provided by the class element-wrapper				*/
+/*																								*/
+/* 1-9-2022																						*/
+/*	float right ensure sections containing twitter follow button is shown at the right side		*/
+/*********************************** COMMENTS topLineRight **************************************/
+	#topLineRight
+	{
+		float: right;
+	}
+
+/*********************************** COMMENTS topLineMiddle *************************************/
+/* 15-9-2023																					*/
+/*	remove float: left because it is already provided by the class element-wrapper				*/
+/*																								*/
+/* 1-9-2022																						*/
+/*	float right ensure sections containing twitter follow button is shown at the right side		*/
+/*********************************** COMMENTS topLineMiddle *************************************/
+	#topLineMiddle
+	{
+/*		float: left;*/
+	}
+
+
+/************************** COMMENTS centerBarWrapper ****************************** 23-7-2023 **/
+/* 21-10-2023																					*/
+/*	change color, background, font settings														*/
+/*		added variables for centerBarWrapper													*/
+/*																								*/
+/* 23-7-2023: replaced whole block with main-wrapper											*/
+/*																								*/
+/************************** COMMENTS centerBarWrapper *******************************************/
+	#centerBarWrapper 
+	{
+		background: $(centerBarWrapper.BG.Color); 
+		color: $(centerBarWrapper.TXT.Color);
+		font: $(centerBarWrapper.TXT.Font);
+
+		background-color: var(--centerBarWrapper-BG-color, var(--root-BG-color, white ));
+<!--		color: var(--centerBarWrapper-TXT-color);-->
+<!--		font-family: var(--centerBarWrapper-TXT-font-family, var(--root-font-family, ))-->
+ 	}
+
+/************************** COMMENTS centerBarLeft ********************************** 23-7-2023 */
+/* 5-10-2023																					*/
+/*	remove background collor lightgreen, this is the color surrounding the post page			*/
+/*																								*/
+/*																								*/
+/************************** COMMENTS centerBarLeft ********************************** 23-7-2023 */
+	#centerBarLeft 
+	{
+		float: left;
+		width: 15%;
+/*background: lightgreen;*/
+	}
+
+/************************** COMMENTS centerBarRight ********************************* 23-7-2023 */
+/* 5-10-2023																					*/
+/*	remove background collor grey, this is the color surrounding the post page					*/
+/*																								*/
+/*																								*/
+/************************** COMMENTS centerBarRight ********************************* 23-7-2023 */
+	#centerBarRight
+	{
+		float: right;
+		width: 20%;
+/*background: #aaa;*/
+	}
+
+/************************** COMMENTS centerBarMiddle ******************************* 23-7-2023 **/
+/* 5-10-2023																					*/
+/*	remove background collor yellow, this is the color surrounding the post page				*/
+/*																								*/
+/*																								*/
+/************************** COMMENTS centerBarMiddle ******************************* 23-7-2023 **/
+	#centerBarMiddle
+	{
+		float: left;
+		width: 65%;
+/*background: yellow;*/
+	}
