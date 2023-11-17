@@ -245,7 +245,6 @@
 		clear: both;
 		width: 100%;
 		float: left;
-/*overflow: auto;*/
 		display: inline-block;
 		box-sizing: border-box;
 		padding: 0%
@@ -287,7 +286,7 @@
 /*	move the settings margin, width, overflow 						*/
 /*		within template-skin cause they are needed for the template layout		*/
 /*												*/
-/**TEMPLATE-SKIN ******************* COMMENTS outerWrapper **************************************/
+/*********************************** COMMENTS outerWrapper **************************************/
 	#outerWrapper 
 	{
 /*		margin: 2px auto;*/
@@ -296,30 +295,30 @@
 	  	overflow: auto;
 	}
 
-/*********************************** COMMENTS topLineLeft ***************************************/
+/**TEMPLATE-SKIN ******************* COMMENTS topLineLeft ***************************************/
 /* 15-9-2023											*/
 /*	remove float: left because it is already provided by the class element-wrapper		*/
 /*												*/
 /*********************************** COMMENTS topLineLeft ***************************************/
 	#topLineLeft
 	{
-		float: left;
 		width: 50%;
 	}
 
-/*********************************** COMMENTS topLineRight **************************************/
+/**TEMPLATE-SKIN ******************* COMMENTS topLineRight **************************************/
 /* 15-9-2023											*/
-/*	remove float: left because it is already provided by the class element-wrapper		*/
+/*	set float: right, need to overrule class element-wrapper				*/
 /*												*/
 /* 1-9-2022											*/
 /*	float right ensure sections containing twitter follow button is shown at the right side	*/
+/*												*/
 /*********************************** COMMENTS topLineRight **************************************/
 	#topLineRight
 	{
 		float: right;
 	}
 
-/*********************************** COMMENTS topLineMiddle *************************************/
+/**TEMPLATE-SKIN ******************* COMMENTS topLineMiddle *************************************/
 /* 15-9-2023											*/
 /*	remove float: left because it is already provided by the class element-wrapper		*/
 /*												*/
@@ -332,12 +331,12 @@
 	}
 
 
-/************************** COMMENTS centerBarLeft ********************************** 23-7-2023 */
+/**TEMPLATE-SKIN ******************* COMMENTS centerBarLeft *************************************/
 /* 5-10-2023											*/
 /*	remove background collor lightgreen, this is the color surrounding the post page	*/
 /*												*/
 /*												*/
-/************************** COMMENTS centerBarLeft ********************************** 23-7-2023 */
+/*********************************** COMMENTS centerBarLeft *************************************/
 	#centerBarLeft 
 	{
 		float: left;
@@ -345,31 +344,41 @@
 /*background: lightgreen;*/
 	}
 
-/************************** COMMENTS centerBarRight ********************************* 23-7-2023 */
+/**TEMPLATE-SKIN ******************* COMMENTS centerBarRight ************************************/
 /* 5-10-2023											*/
 /*	remove background collor grey, this is the color surrounding the post page		*/
 /*												*/
 /*												*/
-/************************** COMMENTS centerBarRight ********************************* 23-7-2023 */
+/*********************************** COMMENTS centerBarRight ************************************/
 	#centerBarRight
 	{
 		float: right;
 		width: 20%;
-/*background: #aaa;*/
 	}
 
-/************************** COMMENTS centerBarMiddle ******************************* 23-7-2023 **/
+/**TEMPLATE-SKIN ******************* COMMENTS centerBarMiddle ***********************************/
 /* 5-10-2023											*/
 /*	remove background collor yellow, this is the color surrounding the post page		*/
 /*												*/
 /*												*/
-/************************** COMMENTS centerBarMiddle ******************************* 23-7-2023 **/
+/*********************************** COMMENTS centerBarMiddle ***********************************/
 	#centerBarMiddle
 	{
 		float: left;
 		width: 70%;
 	}
 
+
+/**TEMPLATE-SKIN ******************* COMMENTS bottomBarLeft *************************************/
+/* 15-9-2023											*/
+/*	remove float: left because it is already provided by the class element-wrapper		*/
+/*												*/
+/*********************************** COMMENTS bottomBarLeft *************************************/
+	#bottomBarLeft 
+	{
+/*		float: left;*/
+		width:20%;
+	}
 
 /*********************************** COMMENTS bottomLineMiddle **********************************/
 /* 20-9-2023											*/
@@ -380,24 +389,12 @@
 /*	remove text-align: center								*/
 /*	remove padding: 0.5%									*/
 /*	add class element-wrapper to the element						*/
+/*												*/
 /*********************************** COMMENTS bottomLineMiddle **********************************/
 	#bottomLineMiddle
 	{
 		text-align: center;
 	}
-
-/* 15-9-2023											*/
-/*	remove float: left because it is already provided by the class element-wrapper		*/
-/*												*/
-/* 1-9-2022											*/
-/*	float right ensure sections containing twitter follow button is shown at the right side	*/
-/*********************************** COMMENTS topLineMiddle *************************************/
-	#topLineMiddle
-	{
-		float: left;
-	}
-
-
 
 /************************************************************************************************/
 /* CSS settings for the DIV's that are within template-skin					*/
