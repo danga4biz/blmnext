@@ -107,15 +107,15 @@
 /*	'box-sizing: border-box' on an element ensures padding + border								*/
 /*		are included in the width and height													*/
 /************************************************************************************************/
-.header-wrapper
-{
-	clear: both;
-	width: 100%;
-	float: left;
-	display: inline-block;
-	box-sizing: border-box;
-	padding: 0%
-}
+	.header-wrapper
+	{
+		clear: both;
+		width: 100%;
+		float: left;
+		display: inline-block;
+		box-sizing: border-box;
+		padding: 0%
+	}
 
 
 /****************************** COMMENTS element-wrapper ****************************************/
@@ -129,12 +129,12 @@
 /*																								*/
 /* REMARK: CLASS handles the CSS layout of the topMenuBarLeftColumn				            	*/
 /************************************************************************************************/
-.element-wrapper
-{
-    float: left;
-	padding:  0.5%;
-	box-sizing: border-box;
-}
+	.element-wrapper
+	{
+    	float: left;
+		padding:  0.5%;
+		box-sizing: border-box;
+	}
 
 
 /****************************** COMMENTS topLineWrapper *****************************************/
@@ -207,15 +207,15 @@
 /*	'box-sizing: border-box' on an element ensures padding + border								*/
 /*		are included in the width and height													*/
 /************************************************************************************************/
-.main-wrapper
-{
-	clear: both;
-	width: 100%;
-	float: left;
+	.main-wrapper
+	{
+		clear: both;
+		width: 100%;
+		float: left;
 /*overflow: auto;*/
-	display: inline-block;
-	box-sizing: border-box;
-	padding: 0%
+		display: inline-block;
+		box-sizing: border-box;
+		padding: 0%
 }
 
 
@@ -239,6 +239,9 @@
  	}
 
 
+
+
+
 /************************** BEGIN TEMPLATE-SKIN CSS SETTINGS ************************************/
 /************************************************************************************************/
 /* CSS settings for the DIV's that are within template-skin										*/
@@ -251,11 +254,14 @@
 /*	move the settings margin, width, overflow 													*/
 /*		within template-skin cause they are needed for the template layout						*/
 /*																								*/
+/**TEMPLATE-SKIN ******************* COMMENTS outerWrapper **************************************/
+	#outerWrapper 
+	{
 /*		margin: 2px auto;*/
-	margin: auto 20px;
-  	width: auto;
-  	overflow: auto;
-
+		margin: auto 5px;
+  		width: auto;
+	  	overflow: auto;
+	}
 
 /*********************************** COMMENTS topLineLeft ***************************************/
 /* 15-9-2023																					*/
