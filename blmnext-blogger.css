@@ -1,3 +1,16 @@
+	<Group description="bottomContainerWrapper" selector="outerWrapper">
+		<Variable name="bottomContainerWrapper.BG.Color" 
+			description="Background Color" 
+			type="color" 
+			default="#FFF"  
+			 value="#B9DAF5"/>
+
+		<Variable name="bottomContainerWrapper.TXT.Color" 
+			description="Text Color"
+			type="color" 
+			default="#FFF"  
+			 value="#FFFFFF"/>
+	</Group>
 
 
 	<!-- 19-10-2023 -->
