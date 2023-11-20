@@ -363,6 +363,7 @@
 	align-items: center;
 }
 
+/*********************************** COMMENTS info-box-wrapper ******************************************/
 	.info-box-wrapper
 	{
 /*		border: 1px solid red;*/
@@ -370,13 +371,13 @@
 		padding: 5px;
 	}
 
-/*********************************** COMMENTS info-box-wrapper ul ***************************/
-/* 18-9-2023																				*/
-/*	moved 'background-color: #00bfff;' to class container-items								*/
-/*		so the menu in d-flyout or m-flyout topMenuFlexWrapper								*/
-/*		and the info-box in bottomContainerWrapper are in full blue							*/
-/*																							*/
-/*********************************** COMMENTS info-box-wrapper ul ***************************/
+/*********************************** COMMENTS info-box-wrapper ul ***************************************/
+/* 18-9-2023												*/
+/*	moved 'background-color: #00bfff;' to class container-items					*/
+/*		so the menu in d-flyout or m-flyout topMenuFlexWrapper					*/
+/*		and the info-box in bottomContainerWrapper are in full blue				*/
+/*													*/
+/*********************************** COMMENTS info-box-wrapper ul ***************************************/
 	.info-box-wrapper ul
 	{
 		list-style-type: none;		
@@ -385,6 +386,7 @@
 /*background-color: #00bfff;*/
 	}
 
+/*********************************** COMMENTS info-box-wrapper li ***************************************/
 	.info-box-wrapper li
 	{
 		color:  white;
@@ -398,67 +400,67 @@
 		text-decoration: none;
 	}
 
-/****************************** COMMENTS info-box-wrapper a:link ********************************/
-/* 18-9-2023 added																				*/
-/*																								*/
-/* 1-9-2023																						*/
-/*	Ctrl + H delete browser history for specific URL to clear visited status					*/
-/*	Set the color of a:visited equal to a:link													*/
-/*	Change a:link into li a:link													        	*/
-/*                                                                                          	*/
-/* 23-8-2023                                                                                	*/
-/*  When we set the color in .info-box-wrapper li a:link it applies to all links in the menu	*/
-/*                                                                                          	*/
-/* 17-7-2023                                                                                	*/
-/*  'color: green' in 'li a:link' sets the color of a unvisited li-item with a hyperlink    	*/
-/*																					        	*/
-/*                                                                                          	*/
-/* 25-7-2023																					*/
-/*	links default settings are:																	*/
-/*		links are underlined																	*/
-/*		unvisited links are blue																*/
-/*		visited links are purple																*/
-/*																								*/
-/* REMARK: handles the CSS layout of an unvisited link           					        	*/
-/****************************** COMMENTS info-box-wrapper a:link ********************************/
+/*********************************** COMMENTS info-box-wrapper a:link ***********************************/
+/* 18-9-2023 added											*/
+/*													*/
+/* 1-9-2023												*/
+/*	Ctrl + H delete browser history for specific URL to clear visited status			*/
+/*	Set the color of a:visited equal to a:link							*/
+/*	Change a:link into li a:link							        	*/
+/*													*/
+/* 23-8-2023												*/
+/*  When we set the color in .info-box-wrapper li a:link it applies to all links in the menu		*/
+/*													*/
+/* 17-7-2023												*/
+/*  'color: green' in 'li a:link' sets the color of a unvisited li-item with a hyperlink    		*/
+/*											        	*/
+/*                      	                                                                    	*/
+/* 25-7-2023												*/
+/*	links default settings are:									*/
+/*		links are underlined									*/
+/*		unvisited links are blue								*/
+/*		visited links are purple								*/
+/*													*/
+/* REMARK: handles the CSS layout of an unvisited link          			        	*/
+/*********************************** COMMENTS info-box-wrapper a:link ***********************************/
     .info-box-wrapper li a:link
     {
 /*		color: green;*/
 color: white;
     }
 
-/****************************** COMMENTS info-box-wrapper a:visited *****************************/
-/* 18-9-2023 added																				*/
-/*																								*/
-/* 1-9-2023																						*/
-/*	Ctrl + H delete browser history for specific URL to clear visited status					*/
-/*	Set the color of a:visited equal to a:link													*/
-/*	Change a:visited into li a:visited												        	*/
-/*																					        	*/
-/* 17-7-2023                                                                                	*/
-/*  'color: blue' in 'li a:visited' sets the color of a visited li-item with a hyperlink    	*/
-/*																					        	*/
-/*                                                                                          	*/
-/* REMARK: handles the CSS layout of an visited link           					            	*/
-/****************************** COMMENTS info-box-wrapper a:visited *****************************/
+/*********************************** COMMENTS info-box-wrapper a:visited ********************************/
+/* 18-9-2023 added											*/
+/*													*/
+/* 1-9-2023												*/
+/*	Ctrl + H delete browser history for specific URL to clear visited status			*/
+/*	Set the color of a:visited equal to a:link							*/
+/*	Change a:visited into li a:visited							      	*/
+/*												       	*/
+/* 17-7-2023                                                                                		*/
+/*  'color: blue' in 'li a:visited' sets the color of a visited li-item with a hyperlink    		*/
+/*											        	*/
+/*                                                                      	                    	*/
+/* REMARK: handles the CSS layout of an visited link           				            	*/
+/*********************************** COMMENTS info-box-wrapper a:visited ********************************/
     .info-box-wrapper li a:visited
     {
 /*		color: red*/
 color: white;
     }
 
-/****************************** COMMENTS info-box-wrapper li a:hover ****************************/
-/* 18-9-2023 added																				*/
-/*																								*/
-/* 23-8-2023                                                                                	*/
-/*  Need to change the position of a:hover in the list of pseudo classes                    	*/
-/*                                                                                          	*/
-/* 17-7-2023                                                                                	*/
+/*********************************** COMMENTS info-box-wrapper a:hover **********************************/
+/* 18-9-2023 added											*/
+/*													*/
+/* 23-8-2023                                                                    	          	*/
+/*  Need to change the position of a:hover in the list of pseudo classes                	    	*/
+/*                                                                                          		*/
+/* 17-7-2023												*/
 /*  'background-color: color' ensures the list item when hovered gets another color	        	*/
-/*  'color: red' in 'li a:hover' sets the color when an option is hovered                   	*/
-/*                                                                                          	*/
-/* REMARK: handles the CSS layout of a link when it is hovered		    			        	*/
-/****************************** COMMENTS info-box-wrapper li a:hover ****************************/
+/*  'color: red' in 'li a:hover' sets the color when an option is hovered                   		*/
+/*                                                                                          		*/
+/* REMARK: handles the CSS layout of a link when it is hovered		    			        */
+/*********************************** COMMENTS info-box-wrapper a:hover **********************************/
 	.info-box-wrapper li a:hover
 	{
 		background-color: #111111;
@@ -466,15 +468,15 @@ color: white;
 		color: red;
 	}
 
-/****************************** COMMENTS info-box-wrapper li a:active ***************************/
-/* 18-9-2023 added																				*/
-/*																								*/
-/* 23-8-2023                                                                                	*/
-/*  Need to add li a:active to menu-wrapper                                                 	*/
-/*                                                                                          	*/
-/*                                                                                          	*/
-/* REMARK: handles the CSS layout of a link when it is selected		    			        	*/
-/************************************************************************************************/
+/*********************************** COMMENTS info-box-wrapper a:active *********************************/
+/* 18-9-2023 added											*/
+/*													*/
+/* 23-8-2023                                    	                                            	*/
+/*  Need to add li a:active to menu-wrapper             	                                    	*/
+/*                                                              	                            	*/
+/*                                                                      	                    	*/
+/* REMARK: handles the CSS layout of a link when it is selected		    		        	*/
+/*********************************** COMMENTS info-box-wrapper a:active *********************************/
 	.info-box-wrapper li a:active
 	{
 /*		color: indigo;*/
