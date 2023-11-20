@@ -1042,6 +1042,29 @@ z-index: 2;
 	}
 
 
+/*********************************** COMMENTS adsense-wrapper *******************************************/
+/* 20-11-2023												*/
+/*	box-sizing: border-box can be removed because is provided globally				*/
+/*                                                                              	            	*/
+/* 22-7-2023                                                                               		*/
+/*	added adsense-wrapper to support adsenseMiddleBarWrapper                                   	*/
+/*													*/
+/*	'clear: both' ensures that when two elements run into each other				*/
+/*		they will not touch each others settings 						*/
+/*                                                                              	            	*/
+/*********************************** COMMENTS adsense-wrapper *******************************************/
+	.adsense-wrapper
+	{
+		clear: both;
+		width: 100%;
+		float: left;
+		overflow: auto;
+		display: inline-block;
+/*		box-sizing: border-box;*/
+		padding: 0%
+	}
+
+
 /**TEMPLATE-SKIN ******************* COMMENTS container-items ***********************************/
 /* 20-11-2023											*/
 /*	box-sizing: border-box can be removed because is provided globally			*/
