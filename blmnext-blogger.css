@@ -1,5 +1,5 @@
 
-<!-- 20-11-2023-->
+	<!-- 20-11-2023-->
 	<Group description="bottomContainerWrapper" selector="outerWrapper">
 		<Variable name="bottomContainerWrapper.BG.Color" 
 			description="Background Color" 
@@ -14,8 +14,7 @@
 			 value="#FFFFFF"/>
 	</Group>
 
-
-<!-- 19-10-2023 -->
+	<!-- 19-10-2023 -->
 	<Group description="middleContainerWrapper" selector="outerWrapper">
 		<Variable name="middleContainerWrapper.BG.Color" 
 			description="Background Color" 
