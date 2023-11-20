@@ -488,7 +488,7 @@
 /*		parameters: border-color, border-top-style, border-width			*/
 /*												*/
 /*********************************** COMMENTS bottomLineWrapper *********************************/
-	.bottomLineWrapper
+	#bottomLineWrapper
 	{
 		border-color: none;
 		border-style: none;
