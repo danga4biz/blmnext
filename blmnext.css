@@ -335,7 +335,7 @@
 /*	Needed in template-skin to set the parameters for the template layout.			*/
 /*		parameters: float: left, width: 50%						*/
 /*												*/
-/*	Removed float: left from element-wrapper						*/
+/*	float: left is set here because it is removed element-wrapper				*/
 /*												*/
 /* 15-9-2023											*/
 /*	remove float: left because it is already provided by the class element-wrapper		*/
@@ -348,8 +348,12 @@
 	}
 
 /**TEMPLATE-SKIN ******************* COMMENTS topLineRight **************************************/
+/* 16-11-2023											*/
+/*	Needed in template-skin to set the parameters for the template layout.			*/
+/*		parameters: float: left								*/
+/*												*/
 /* 15-9-2023											*/
-/*	set float: right, need to overrule class element-wrapper				*/
+/*	set float: right to overrule class element-wrapper					*/
 /*												*/
 /* 1-9-2022											*/
 /*	float right ensure sections containing twitter follow button is shown at the right side	*/
@@ -361,6 +365,12 @@
 	}
 
 /**TEMPLATE-SKIN ******************* COMMENTS topLineMiddle *************************************/
+/* 16-11-2023											*/
+/*	Needed in template-skin to set the parameters for the template layout.			*/
+/*		parameters: float: left								*/
+/*												*/
+/*	float: left is set here because it is removed element-wrapper				*/
+/*												*/
 /* 15-9-2023											*/
 /*	remove float: left because it is already provided by the class element-wrapper		*/
 /*												*/
@@ -386,6 +396,13 @@
 	}
 
 /**TEMPLATE-SKIN ******************* COMMENTS centerBarRight ************************************/
+/* 16-11-2023											*/
+/*	Needed in template-skin to set the parameters for the template layout.			*/
+/*		parameters: float: left, width: 50%						*/
+/*												*/
+/*	float: left is set here because removed float: left from element-wrapper		*/
+/*												*/
+
 /* 5-10-2023											*/
 /*	remove background collor grey, this is the color surrounding the post page		*/
 /*												*/
