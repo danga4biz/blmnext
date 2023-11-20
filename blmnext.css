@@ -652,6 +652,33 @@ color: white;
 	}
 
 
+/*********************************** COMMENTS mobile-menu-main li ***************************************/
+/*********************************** COMMENTS mobile-menu-main ******************************************/
+/* 29-9-2023												*/
+/*	set max-width from 600 to 800 (769 seems to be the max width for tablets			*/
+/*													*/
+/* 7-9-2023												*/
+/*	Most browsers will display the nav element with the following default values:         		*/
+/* 	'display: block'                                                                    		*/
+/*	Need to remove 'display: block' because it is not needed here					*/
+/*	Need to remove 'text-align: left' is set in m-flyout li a					*/
+/*													*/
+/* 30-7-2023                                                                                    	*/
+/* 	'display: block'in li to ensure list-items displayed vertically	    				*/
+/*   	'text-align: left' in 'li a' to display list-items starting left				*/
+/*********************************** COMMENTS mobile-menu-main ******************************************/
+@media screen and (max-width: 800px) {
+	.mobile-menu-main
+	{
+        	display: block;
+    	}
+
+	.mobile-menu-main li a
+	{
+/*		text-align: left*/
+	}
+}
+
 /********************************************************************************************************/
 /*********************************** BEGIN MENU SETTINGS ************************************************/
 /********************************************************************************************************/
