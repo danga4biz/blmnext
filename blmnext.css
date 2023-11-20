@@ -1691,10 +1691,82 @@ border-top-color: initial;
 	}
 
 
+/****************************** COMMENTS mobile-menu-main li*************************************/
+/* 29-8-2023                                                                                    */
+/*  If we remove padding then the desktop menu is shown full-width and on top                   */
+/*                                                                                              */
+/*  Moved the containerZ under m-flyout to hide it in desktop                                   */
+/*      then the desktop menu is shown full-width and on top                                    */
+/*                                                                                              */
+/*  Read more about padding/ 1.5rem: https://tailwindcss.com/docs/padding                       */
+/************************************************************************************************/
+/*
+.containerZ {
+  position: relative;
+  padding: 1.5rem;
+}
+*/
 
+/*********************************** COMMENTS menu-toggleZ **********************************************/
+.menu-toggleZ {
+  position: absolute;
+  right: 1.5rem;
+  top: 49%;
+  transform: translate(0, -50%);
+  height: 26px;
+  width: 29px;
 
+  &, &:hover {
+    color: #000;
+  }
+}
 
+/****************************** COMMENTS .menu-toggle-barZ  *************************************/
+/* 6-11-2023											*/
+/*	change background-color from red to black 						*/
+/*	change height of the vertical bars from 4px into 3px					*/
+/*												*/
+/*	NEED TO CHANGE THE background-color of .m-menu-middle					*/
+/****************************** COMMENTS .menu-toggle-barZ  *************************************/
+.menu-toggle-barZ {
+	display: block;
+	position: absolute;
+	top: 50%;
+	margin-top: -1px;
+	right: 0;
+	width: 100%;
+/*	height: 4px;*/
+	height: 3px;
+	border-radius: 4px;
+/*	background-color: red;*/
+	background-color: black;
+	transition: all 0.3s ease;
 
+  &.menu-toggle-bar--topZ {
+	transform: translate(0, -8px);
+  }
+	
+  &.menu-toggle-bar--middleZ {
+  }
+	
+  &.menu-toggle-bar--bottomZ {
+	transform: translate(0, 8px);
+  }
+
+  .nav-openZ & {
+    &.menu-toggle-bar--topZ {
+	transform: translate(0, 0) rotate(45deg);
+    }
+	  
+    &.menu-toggle-bar--middleZ {
+	opacity: 0;
+    }
+	  
+    &.menu-toggle-bar--bottomZ {
+	transform: translate(0, 0) rotate(-45deg);
+    }
+  }
+}
 
 
 
