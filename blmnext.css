@@ -465,6 +465,19 @@
 	}
 
 
+/**TEMPLATE-SKIN ******************* COMMENTS footer-wrapper ************************************/
+/* 17-11-2023											*/
+/*	Needed in template-skin to set the parameters for the template layout.			*/
+/*		parameters: width: 100% , display: inline-block					*/
+/*												*/
+/*********************************** COMMENTS footer-wrapper ************************************/
+	.footer-wrapper
+	{
+		width: 100%;
+		display: inline-block;
+	}
+
+
 /**TEMPLATE-SKIN ******************* COMMENTS bottomBarLeft *************************************/
 /* 15-9-2023											*/
 /*	remove float: left because it is already provided by the class element-wrapper		*/
