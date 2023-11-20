@@ -1,38 +1,38 @@
 
 <!-- 20-11-2023-->
-<Group description="bottomContainerWrapper" selector="outerWrapper">
-	<Variable name="bottomContainerWrapper.BG.Color" 
-		description="Background Color" 
-		type="color" 
-		default="#FFF"  
-		 value="#B9DAF5"/>
+	<Group description="bottomContainerWrapper" selector="outerWrapper">
+		<Variable name="bottomContainerWrapper.BG.Color" 
+			description="Background Color" 
+			type="color" 
+			default="#FFF"  
+			 value="#B9DAF5"/>
 
-	<Variable name="bottomContainerWrapper.TXT.Color" 
-		description="Text Color"
-		type="color" 
-		default="#FFF"  
-		 value="#FFFFFF"/>
-</Group>
+		<Variable name="bottomContainerWrapper.TXT.Color" 
+			description="Text Color"
+			type="color" 
+			default="#FFF"  
+			 value="#FFFFFF"/>
+	</Group>
 
 
 <!-- 19-10-2023 -->
-<Group description="middleContainerWrapper" selector="outerWrapper">
-	<Variable name="middleContainerWrapper.BG.Color" 
-		description="Background Color" 
-		type="color" 
-		default="#fff"  
-		 value="#CEFFFF"/>
+	<Group description="middleContainerWrapper" selector="outerWrapper">
+		<Variable name="middleContainerWrapper.BG.Color" 
+			description="Background Color" 
+			type="color" 
+			default="#fff"  
+			 value="#CEFFFF"/>
 
-	<Variable name="middleContainerWrapper.TXT.Color" 
-		description="Text Color"
-		type="color" 
-		default="#fff"  
-		 value="#1D2228"/>
+		<Variable name="middleContainerWrapper.TXT.Color" 
+			description="Text Color"
+			type="color" 
+			default="#fff"  
+			 value="#1D2228"/>
 
-	<Variable name="middleContainerWrapper.TXT.Font" 
-		description="Text Font Styles"
-		type="font" 
-		default="normal normal 16px Arial, Verdana,'Trebuchet MS', Trebuchet, Sans-serif"  
-		 value="normal normal 16px Montserrat, Open Sans, Arial, Cambria"/>
-</Group>
+		<Variable name="middleContainerWrapper.TXT.Font" 
+			description="Text Font Styles"
+			type="font" 
+			default="normal normal 16px Arial, Verdana,'Trebuchet MS', Trebuchet, Sans-serif"  
+			 value="normal normal 16px Montserrat, Open Sans, Arial, Cambria"/>
+	</Group>
 
