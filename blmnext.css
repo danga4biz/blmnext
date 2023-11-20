@@ -487,12 +487,15 @@
 /*	Needed in template-skin to set the parameters for the template layout.			*/
 /*		parameters: border-color, border-top-style, border-width			*/
 /*												*/
-/*********************************** COMMENTS footer-wrapper ************************************/
+/*********************************** COMMENTS bottomLineWrapper *********************************/
 	.bottomLineWrapper
 	{
 		width: 100%;
 		display: inline-block;
-		border: initial;
+		border-color: none;
+		border-style: none;
+		border-width: 2px;
+
 	}
 
 
