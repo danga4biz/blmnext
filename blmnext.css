@@ -237,7 +237,7 @@
 }
 
 
-/****************************** COMMENTS middleContainerWrapper *************************************************/
+/*********************************** COMMENTS middleContainerWrapper ********************************************/
 /* 20-11-2023													*/
 /*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN								*/
 /*                                                                      	                    		*/
@@ -255,7 +255,7 @@
 /* 18-10-2023													*/
 /* container to present the sheets 										*/
 /*														*/
-/****************************** COMMENTS middleContainerWrapper *************************************************/
+/*********************************** COMMENTS middleContainerWrapper ********************************************/
 	#middleContainerWrapper
 	{
 		background: $(middleContainerWrapper.BG.Color); 
@@ -265,6 +265,75 @@
 		background-color: var(--middleContainerWrapper-BG-color, var(--root-BG-color, white ));
 <!--		color: var(--middleContainerWrapper-TXT-color);-->
 <!--		font-family: var(--middleContainerWrapper-TXT-font-family, var(--root-font-family, ))-->
+	}
+
+
+/*********************************** COMMENTS target-container-erp **************************************/
+/* 18-10-2023 												*/
+/* https://www.smashingmagazine.com/2014/02/making-embedded-content-work-in-responsive-design/ 		*/
+/* https://www.w3schools.com/howto/howto_css_responsive_iframes.asp					*/
+/*													*/
+/*	display: none is to ensure the sheet is not displayed till the button is clicked		*/
+/*	resize: both allows the viewer to resize the div						*/
+/*													*/
+/*********************************** COMMENTS target-container-erp **************************************/
+	#target-container-erp
+	{
+		position: relative;
+		padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+/*		padding-bottom: 56.25%;*/
+/*		padding-top: 35px;*/
+		height: 0;
+        resize: both;
+		overflow: hidden;
+		width: 100%;
+		display: none;
+  	}
+
+	#target-container-erp iframe
+	{
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		border: none;
+		width: 100%;
+		height: 100%;		
+	}
+
+/*********************************** COMMENTS target-container-ltdw *************************************/
+/* 26-10-2023 												*/
+/* https://www.smashingmagazine.com/2014/02/making-embedded-content-work-in-responsive-design/ 		*/
+/* https://www.w3schools.com/howto/howto_css_responsive_iframes.asp					*/
+/*													*/
+/*	display: none is to ensure the sheet is not displayed till the button is clicked		*/
+/*	resize: both allows the viewer to resize the div						*/
+/*													*/
+/*********************************** COMMENTS target-container-ltdw *************************************/
+	#target-container-ltdw
+	{
+		position: relative;
+		padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+/*		padding-bottom: 56.25%;*/
+/*		padding-top: 35px;*/
+		height: 0;
+        resize: both;
+		overflow: hidden;
+		width: 100%;
+		display: none;
+  	}
+
+	#target-container-ltdw iframe
+	{
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		border: none;
+		width: 100%;
+		height: 100%;		
 	}
 
 
