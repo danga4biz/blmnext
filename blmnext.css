@@ -629,29 +629,6 @@ color: white;
 /*********************************** BEGIN MENU SETTINGS ************************************************/
 /********************************************************************************************************/
 
-/*********************************** COMMENTS mobile-positionZ ******************************************/
-/* 28-8-2023												*/
-/*	started using mobile-position as class								*/
-/*													*/
-/* 6-9-2023												*/
-/*	remove border											*/
-/*													*/
-/*********************************** COMMENTS mobile-positionZ ******************************************/
-	#mobile-positionZ
-	{
-		margin: auto;
-		width: 100%;
-/*	border: 3px solid green;*/
-	}
-
-	.mobile-positionZ
-	{
-		margin: auto;
-		width: 100%;
-/*	border: 3px solid green;*/
-	}
-
-
 /*********************************** COMMENTS mobile-menu-main li ***************************************/
 /*********************************** COMMENTS mobile-menu-main ******************************************/
 /* 29-9-2023												*/
@@ -678,6 +655,50 @@ color: white;
 /*		text-align: left*/
 	}
 }
+
+
+/*********************************** COMMENTS mobile-positionZ ******************************************/
+/* 28-8-2023												*/
+/*	started using mobile-position as class								*/
+/*													*/
+/* 6-9-2023												*/
+/*	remove border											*/
+/*													*/
+/*********************************** COMMENTS mobile-positionZ ******************************************/
+	#mobile-positionZ
+	{
+		margin: auto;
+		width: 100%;
+/*	border: 3px solid green;*/
+	}
+
+	.mobile-positionZ
+	{
+		margin: auto;
+		width: 100%;
+/*	border: 3px solid green;*/
+	}
+
+
+/****************************** COMMENTS m-menu-middle ******************************************/
+/* 30-7-2023                                                                                    */
+/*  nav class='m-menu'                                                                          */
+/*      Most browsers will display the nav element with the following default values:         	*/
+/*          'display: block'                                                                    */
+/* 	Need to check it out - if so the mobile-menu-main li is not needed                     	*/
+/****************************** COMMENTS m-menu-middle ******************************************/
+	#m-menu-middle
+    {
+        background-color: olive;
+        color: blue;
+    }
+
+    .m-menu-middle
+    {
+        background-color: yellow;
+		display: none;
+    }
+
 
 /********************************************************************************************************/
 /*********************************** BEGIN MENU SETTINGS ************************************************/
