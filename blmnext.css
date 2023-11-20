@@ -480,8 +480,8 @@
 
 /**TEMPLATE-SKIN ******************* COMMENTS bottomLineWrapper**********************************/
 /* 20-11-2023											*/
-/*	Needed here to REMOVE the settings for the template layout otherwise they are		*/
-/*		also displayed on the website							*/
+/*	Needed here to REMOVE the settings of the border that are used for the template layout	*/
+/*	otherwise they are also displayed on the website					*/
 /*												*/
 /* 16-11-2023											*/
 /*	Needed in template-skin to set the parameters for the template layout.			*/
@@ -490,9 +490,7 @@
 /*********************************** COMMENTS bottomLineWrapper *********************************/
 	#bottomLineWrapper
 	{
-		border-color: none;
 		border-style: none;
-		border-width: 0px;
 	}
 
 
