@@ -1777,7 +1777,7 @@ border-top-color: initial;
 /*	hide centerBarLeft on mobile screens							*/
 /*	hide centerBarRight on mobile screens							*/
 /*												*/
-/********************* COMMENTS mainCenterLeft, mainCenterRight, mainCenterMiddle ***************/
+/********************* COMMENTS centerBarLeft, centerBarRight, centerBarMiddle ******************/
 /* On screens that are 600px or less, set the background color to lightgreen */
 
 @media screen and (max-width: 800px) {
