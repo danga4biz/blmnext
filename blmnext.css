@@ -257,33 +257,33 @@
  	}
 
 
-/****************************** COMMENTS footer-wrapper *****************************************/
-/* 20-11-2023											*/
-/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN						*/
-/*												*/
-/* 20-11-2023											*/
-/*	box-sizing: border-box can be removed because is provided globally			*/
-/*												*/
-/* 26-8-2023											*/
-/*  overflow should be removed because it creates scroll-bar					*/
-/*												*/
-/* 20-7-2023											*/
-/*  replaced whole block in wrappers with footer-wrapper					*/
-/*												*/
-/*	'clear: both' ensures that when two elements run into each other 			*/
-/*		they will not touch each others settings 					*/
-/*												*/
-/* 20-7-2023											*/
-/*  it is not clear whether 'overflow: auto' really has a purpose				*/
-/*												*/
-/* 21-7-2023											*/
-/*	'padding: 0%' ensures the topMenuBar-elements are placed directly at the borders	*/
-/*		padding is in the topMenuBar-elements via element-wrapper			*/
-/*												*/
-/* 25-7-2023											*/
-/*	'box-sizing: border-box' on an element ensures padding + border				*/
-/*		are included in the width and height						*/
-/************************************************************************************************/
+/*********************************** COMMENTS footer-wrapper ********************************************/
+/* 20-11-2023												*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN							*/
+/*													*/
+/* 20-11-2023												*/
+/*	box-sizing: border-box can be removed because is provided globally				*/
+/*													*/
+/* 26-8-2023												*/
+/*  overflow should be removed because it creates scroll-bar						*/
+/*													*/
+/* 20-7-2023												*/
+/*  replaced whole block in wrappers with footer-wrapper						*/
+/*													*/
+/*	'clear: both' ensures that when two elements run into each other 				*/
+/*		they will not touch each others settings 						*/
+/*													*/
+/* 20-7-2023												*/
+/*  it is not clear whether 'overflow: auto' really has a purpose					*/
+/*													*/
+/* 21-7-2023												*/
+/*	'padding: 0%' ensures the topMenuBar-elements are placed directly at the borders		*/
+/*		padding is in the topMenuBar-elements via element-wrapper				*/
+/*													*/
+/* 25-7-2023												*/
+/*	'box-sizing: border-box' on an element ensures padding + border					*/
+/*		are included in the width and height							*/
+/*********************************** COMMENTS footer-wrapper ********************************************/
 	.footer-wrapper
 	{
 		clear: both;
@@ -337,6 +337,147 @@
 		background-color: var(--bottomContainerWrapper-BG-color, var(--root-BG-color, white ));
 <!--		color: var(--bottomContainerWrapper-TXT-color);-->
 <!--		font-family: var(--bottomContainerWrapper-TXT-font-family, var(--root-font-family, ))-->
+	}
+
+
+/*********************************** COMMENTS block-title ***********************************************/
+/* 15-9-2023												*/
+/*	line-height: 25px ensure the line displays below the title					*/
+/* 	margin-bottom makes space between the title and the content of the box 				*/
+/* 	margin-top makes space between the title and the upper box 					*/
+/*********************************** COMMENTS block-title ***********************************************/
+.block-title
+{
+	font-size: 14px;
+	margin-bottom: 26px;
+	margin-top: px;
+	line-height: 25px;
+	border-bottom: 2px solid #222;
+}
+
+.block-title > span
+{
+	background-color: #3a85c7;
+	color: #fff;
+	padding: 7px 12px 4px;
+	align-items: center;
+}
+
+	.info-box-wrapper
+	{
+/*		border: 1px solid red;*/
+		height: auto;
+		padding: 5px;
+	}
+
+/*********************************** COMMENTS info-box-wrapper ul ***************************/
+/* 18-9-2023																				*/
+/*	moved 'background-color: #00bfff;' to class container-items								*/
+/*		so the menu in d-flyout or m-flyout topMenuFlexWrapper								*/
+/*		and the info-box in bottomContainerWrapper are in full blue							*/
+/*																							*/
+/*********************************** COMMENTS info-box-wrapper ul ***************************/
+	.info-box-wrapper ul
+	{
+		list-style-type: none;		
+		margin: 0;
+		padding: 0;
+/*background-color: #00bfff;*/
+	}
+
+	.info-box-wrapper li
+	{
+		color:  white;
+		margin: 5px;
+	}
+
+	.info-box-wrapper li a
+	{
+		display: block;
+/*		color: braun;*/
+		text-decoration: none;
+	}
+
+/****************************** COMMENTS info-box-wrapper a:link ********************************/
+/* 18-9-2023 added																				*/
+/*																								*/
+/* 1-9-2023																						*/
+/*	Ctrl + H delete browser history for specific URL to clear visited status					*/
+/*	Set the color of a:visited equal to a:link													*/
+/*	Change a:link into li a:link													        	*/
+/*                                                                                          	*/
+/* 23-8-2023                                                                                	*/
+/*  When we set the color in .info-box-wrapper li a:link it applies to all links in the menu	*/
+/*                                                                                          	*/
+/* 17-7-2023                                                                                	*/
+/*  'color: green' in 'li a:link' sets the color of a unvisited li-item with a hyperlink    	*/
+/*																					        	*/
+/*                                                                                          	*/
+/* 25-7-2023																					*/
+/*	links default settings are:																	*/
+/*		links are underlined																	*/
+/*		unvisited links are blue																*/
+/*		visited links are purple																*/
+/*																								*/
+/* REMARK: handles the CSS layout of an unvisited link           					        	*/
+/****************************** COMMENTS info-box-wrapper a:link ********************************/
+    .info-box-wrapper li a:link
+    {
+/*		color: green;*/
+color: white;
+    }
+
+/****************************** COMMENTS info-box-wrapper a:visited *****************************/
+/* 18-9-2023 added																				*/
+/*																								*/
+/* 1-9-2023																						*/
+/*	Ctrl + H delete browser history for specific URL to clear visited status					*/
+/*	Set the color of a:visited equal to a:link													*/
+/*	Change a:visited into li a:visited												        	*/
+/*																					        	*/
+/* 17-7-2023                                                                                	*/
+/*  'color: blue' in 'li a:visited' sets the color of a visited li-item with a hyperlink    	*/
+/*																					        	*/
+/*                                                                                          	*/
+/* REMARK: handles the CSS layout of an visited link           					            	*/
+/****************************** COMMENTS info-box-wrapper a:visited *****************************/
+    .info-box-wrapper li a:visited
+    {
+/*		color: red*/
+color: white;
+    }
+
+/****************************** COMMENTS info-box-wrapper li a:hover ****************************/
+/* 18-9-2023 added																				*/
+/*																								*/
+/* 23-8-2023                                                                                	*/
+/*  Need to change the position of a:hover in the list of pseudo classes                    	*/
+/*                                                                                          	*/
+/* 17-7-2023                                                                                	*/
+/*  'background-color: color' ensures the list item when hovered gets another color	        	*/
+/*  'color: red' in 'li a:hover' sets the color when an option is hovered                   	*/
+/*                                                                                          	*/
+/* REMARK: handles the CSS layout of a link when it is hovered		    			        	*/
+/****************************** COMMENTS info-box-wrapper li a:hover ****************************/
+	.info-box-wrapper li a:hover
+	{
+		background-color: #111111;
+		text-decoration: underline;
+		color: red;
+	}
+
+/****************************** COMMENTS info-box-wrapper li a:active ***************************/
+/* 18-9-2023 added																				*/
+/*																								*/
+/* 23-8-2023                                                                                	*/
+/*  Need to add li a:active to menu-wrapper                                                 	*/
+/*                                                                                          	*/
+/*                                                                                          	*/
+/* REMARK: handles the CSS layout of a link when it is selected		    			        	*/
+/************************************************************************************************/
+	.info-box-wrapper li a:active
+	{
+/*		color: indigo;*/
 	}
 
 
