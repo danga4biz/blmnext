@@ -369,6 +369,124 @@
 	}
 
 
+/****************************** COMMENTS container-items ****************************************/
+/* 20-11-2023											*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN						*/
+/*												*/
+/* 21-10-2023											*/
+/*	add 'padding-right: 5px'								*/
+/*												*/
+/* 29-9-2023											*/
+/*	add 'padding-left: 5px' because in mobile view title was to close to the box		*/
+/*												*/
+/* 18-9-2023											*/
+/*	moved 'background-color: #00bfff;' to class container-items				*/
+/*		so the menu in d-flyout or m-flyout topMenuFlexWrapper				*/
+/*		and the info-box in bottomContainerWrapper are in full blue			*/
+/*												*/
+/* 13-9-2023											*/
+/*	moved float: left to class flex-container						*/
+/*  Set 'flex: auto' means flex-grow=1, flex-shrink=1, flex-basis=auto                      	*/
+/*												*/
+/*	remove 'flex-grow: 1' defines how much the item will grow relative to the other		*/
+/*		items in the container								*/
+/*												*/
+/* 6-9-2023                                                                                	*/
+/*	remove border                                                                           */
+/*												*/
+/* 30-6-2023											*/
+/*  definition of the container-items class							*/
+/****************************** COMMENTS container-items ****************************************/
+	.container-items
+	{
+		background-color: var(--container-items-BG-color, var(--root-BG-color, white ));
+<!--		color: var(--outerWrapper-TXT-color);-->
+<!--		font-family: var(--outerWrapper-TXT-font-family, var(--root-font-family, ))-->
+	}
+
+
+/****************************** COMMENTS flex-container *****************************************************************/
+/* 30-9-2023														*/
+/*	change padding from 5% into 1% such that it looks prettier on mobile						*/
+/*															*/
+/* 28-9-2023														*/
+/*	remove 'flex-direction: row'											*/
+/*		the flex-direction: the default is ROW                                  				*/
+/*															*/
+/* 19-9-2023														*/
+/*	remove 'font-size: 20px'											*/
+/*															*/
+/* 18-9-2023														*/
+/*	padding-left and padding-rigth ensures the flex-container 							*/
+/*		does not fill the complete line which would make the items stretch out over				*/
+/*		the screen												*/
+/*															*/
+/* 15-9-2023														*/
+/*	removed align-items: center because do not want the flex items in the container					*/
+/*		to align along the cross-axis since it looks strange							*/
+/*		removal has no effect on the d-flyout nor m-flyout menu							*/
+/*															*/
+/* 13-9-2023														*/
+/*	find out where float: left is set 										*/
+/*	float: left is set in element-wrapper										*/
+/*															*/
+/* 10-9-2023														*/
+/*	'align-items: center' aligns flex items along the cross axis							*/
+/*		of the current line of the flex container								*/
+/*															*/
+/* 9-9-2023														*/
+/*	remove 'text-align: center' because bottomContainer should be left aligned					*/
+/*															*/
+/* 6-9-2023														*/
+/*	set text-align to center											*/
+/*															*/
+/* 4-9-2023														*/
+/*	justify-content: space-around provides half-sized space on the edges						*/
+/*															*/
+/*	moved justify-content: space-around from topContainer								*/
+/*															*/
+/*	moved align-items: center from topContainer									*/
+/*															*/
+/*	moved padding-left from topContainer										*/
+/*	moved padding-right from topContainer										*/
+/*															*/
+/* 10-9-2022														*/
+/*	attempt to create responsive 5 columns footer									*/
+/*	align-items versus justify-content: we need them both x- and y-as						*/
+/*	https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container	*/
+/*															*/
+/* 28-6-2023														*/
+/*	justify-content controls where the flex items sit on the main axis						*/
+/*	space-around: distributes all the items evenly along the main axis 						*/
+/*		with a bit of space left at either end									*/
+/*	center make the flex items sit in the center of the main axis							*/
+/*	https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox						*/
+/*															*/
+/* 28-6-2023														*/
+/*	align-items controls where the flex items sit on the cross axis							*/
+/*															*/
+/* 30-6-2023														*/
+/*	definition of the flex-container										*/
+/****************************** COMMENTS flex-container *****************************************************************/
+	.flex-container 
+	{
+		display: flex;
+/*		flex-direction: row;*/
+/*		flex-wrap: wrap;*/
+/*		text-align: center;*/
+/*		font-size: 20px;*/
+		justify-content: space-around;
+/*		align-items: center;*/
+		padding-left:  1%;
+		padding-right: 1%;
+	}
+
+
+
+
+
+
+
 /************************** BEGIN TEMPLATE-SKIN CSS SETTINGS ************************************/
 /************************************************************************************************/
 /* CSS settings for the DIV's that are within template-skin					*/
@@ -609,7 +727,7 @@
 		border-style: none;
 	}
 
-/*********************************** COMMENTS bottomLineMiddle **********************************/
+/**TEMPLATE-SKIN ******************* COMMENTS bottomLineMiddle **********************************/
 /* 20-9-2023											*/
 /*	remove class element-wrapper from element, because it has a float: left			*/
 /*	reinstate text-align: center								*/
@@ -624,6 +742,46 @@
 	{
 		text-align: center;
 	}
+
+
+/**TEMPLATE-SKIN ******************* COMMENTS container-items ***********************************/
+/* 20-11-2023											*/
+/*	box-sizing: border-box can be removed because is provided globally			*/
+/*												*/
+/* 21-10-2023											*/
+/*	add 'padding-right: 5px'								*/
+/*												*/
+/* 29-9-2023											*/
+/*	add 'padding-left: 5px' because in mobile view title was to close to the box		*/
+/*												*/
+/* 18-9-2023											*/
+/*	moved 'background-color: #00bfff;' to class container-items				*/
+/*		so the menu in d-flyout or m-flyout topMenuFlexWrapper				*/
+/*		and the info-box in bottomContainerWrapper are in full blue			*/
+/*												*/
+/* 13-9-2023											*/
+/*	moved float: left to class flex-container						*/
+/*  Set 'flex: auto' means flex-grow=1, flex-shrink=1, flex-basis=auto                      	*/
+/*												*/
+/*	remove 'flex-grow: 1' defines how much the item will grow relative to the other		*/
+/*		items in the container								*/
+/*												*/
+/* 6-9-2023                                                                                	*/
+/*	remove border                                                                           */
+/*												*/
+/* 30-6-2023											*/
+/*  definition of the container-items class							*/
+/****************************** COMMENTS container-items ****************************************/
+	.container-items
+	{
+/*		float: left;*/
+/*		box-sizing: border-box;*/
+		flex: auto;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+
 
 /************************************************************************************************/
 /* CSS settings for the DIV's that are within template-skin					*/
