@@ -506,9 +506,9 @@ color: white;
 		color: $(bottomLineWrapper.TXT.Color);
 		font: $(bottomLineWrapper.TXT.Font);
 
-		background-color: var(--topLineWrapper-BG-color, var(--root-BG-color, white ));
-<!--		color: var(--topLineWrapper-TXT-color);-->
-<!--		font-family: var(--topLineWrapper-TXT-font-family, var(--root-font-family, ))-->
+		background-color: var(--bottomLineWrapper-BG-color, var(--root-BG-color, white ));
+<!--		color: var(--bottomLineWrapper-TXT-color);-->
+<!--		font-family: var(--bottomLineWrapper-TXT-font-family, var(--root-font-family, ))-->
 	}
 
 
