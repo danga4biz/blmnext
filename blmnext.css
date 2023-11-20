@@ -729,6 +729,277 @@ z-index: 2;
 }
 
 
+/*********************************** COMMENTS m-flyout **************************************************/
+/* 29-9-2023												*/
+/*	set max-width from 600 to 800 (769 seems to be the max width for tablets			*/
+/*													*/
+/*********************************** COMMENTS m-flyout **************************************************/
+/* On screens that are 600px or less, set the background color to lightgreen */
+
+@media screen and (max-width: 800px) {
+
+/*********************************** COMMENTS m-flyout ul ***********************************************/
+/* 28-9-2023												*/
+/*	set 'padding: 0' to avoid that sub-menu list item start too much from the left side		*/
+/*		set 'margin-left: 5px' in .m-flyout > ul > li						*/
+/*													*/
+/* 18-9-2023												*/
+/*	moved 'background-color: #00bfff;' to class container-items					*/
+/*		so the menu in d-flyout or m-flyout topMenuFlexWrapper					*/
+/*		and the info-box in bottomContainerWrapper are in full blue				*/
+/*													*/
+/*********************************** COMMENTS m-flyout ul ***********************************************/
+	.m-flyout ul
+	{
+		list-style-type: none;
+/*            float:right;*/
+/*		margin: 0;*/
+		padding: 0;
+/*		overflow: hidden;*/
+/*background-color: #00bfff;*/
+	}
+
+/*********************************** COMMENTS m-flyout > ul > li ****************************************/
+/*********************************** COMMENTS m-flyout li ***********************************************/
+/* 28-9-2023												*/
+/*	set 'margin-left: 5px' 										*/
+/*		because padding was removed from .m-flyout ul						*/
+/*	remove 'color: white'										*/
+/*		by default it is not possible to change the color of a list item			*/
+/*													*/
+/* 7-9-2023												*/
+/*	Need to remove display: inline-block because in mobile version 					*/
+/*		we do not want list items horizontally							*/
+/*	Set the margin: 5px to create space between the list items								*/
+/*																							*/
+/* 23-8-2023                                                                                */
+/*  Need to modify menu-wrapper because we only set li and need to set > ul > li            */
+/*      makes a difference because we only want to set the li-elements of the first level   */
+/*      and not the li-elements of the sub-level                                            */
+/*  We can also set 'text-align: center' then it will align all texts in the li             */
+/*      also those in sub-menus, but we set 'text-align: center' in a                       */
+/*  Need to remove the color because it is set in 'li a'                                    */
+/*	
+/****************************** COMMENTS m-flyout > ul > li *********************************/
+	.m-flyout > ul > li
+	{
+/*    	display: inline-block;*/
+/*            float: right;*/
+/*            float: none;*/
+/*            padding: 10px;*/
+/*color:  white;*/
+margin: 5px;
+	}
+
+/****************************** COMMENTS .m-flyout > ul > li ul *****************************/
+/*28-9-2023																					*/
+/*	set 'margin-left: 5px' 																	*/
+/*		because padding was removed from .m-flyout ul										*/
+/*	by using .m-flyout > ul > li ul 														*/
+/* 		in case more sub-menus are used all will jump in									*/
+/* 			because the whole box is set to jump in with ul	    							*/
+/****************************** COMMENTS .m-flyout > ul > li ul *****************************/
+.m-flyout > ul > li ul
+{
+    margin-left: 15px;
+}
+
+/* HELP HELP HELP HELP HELP HELP HELP HELP */
+/****************************** COMMENTS m-flyout li a **************************************/
+/* 10-9-2023																				*/
+/*	Need to find out what sets the text-align to left ==> it is not here					*/
+/*																							*/
+/* 7-9-2023																					*/
+/*	Remove the padding and set it in m-flyout > ul											*/
+/*	Need to set text-align: left															*/
+/*		because removed it in mobile-menu-main												*/
+/*																							*/
+/* 23-8-2023                                                                                */
+/*  Need to find out what sets the center-align ==> it is not here                          */
+/*  Color is set in li a:link                                                               */
+/*                                                                                          */
+/* 18-july-2023                                                                             */
+/*  'display: block' has the same result as (p paragraf) and is needed to: 		            */
+/*		- 10-9-2023: ensures the a:hover background setting applies to the whole line		*/
+/*      - set space around the list options 										        */
+/*      - avoids the a:hover background fills the topMenuBarRight                           */
+/*          when 'overflow: hidden' in 'ul' is not used                                     */
+/*  'padding: 16px' sets width and height of the 'a: hover' background				        */
+/*																							*/
+/* REMARK: handles the CSS layout of the link 												*/ 
+/********************************************************************************************/
+	.m-flyout li a
+	{
+		display: block;
+		color: white;
+/*		text-align: center;*/
+/*10-9		text-align: left;*/
+/*		padding: 10px;*/
+		text-decoration: none;
+	/*	color: #FFF;*/
+		color: $(menu.link.color);	
+	}
+
+/* HELP HELP HELP HELP HELP HELP HELP HELP */
+/****************************** COMMENTS m-flyout li.selected a *****************************/
+/* 23-8-2023                                                                                */
+/*  Need to find out what the difference is between "li.selected a" AND li a:active         */
+/*                                                                                          */
+/* 21-7-2023                                                                                */
+/*  'color: red' in 'li.selected a sets the color when an option is selected                */
+/*                                                                                          */
+/* REMARK: handles the CSS layout of a link when it is selected		    			        */
+/********************************************************************************************/
+	.m-flyout li.selected a
+	{
+color: yellow;
+	}
+
+/* HELP HELP HELP HELP HELP HELP HELP HELP */
+/****************************** COMMENTS m-flyout li a:link *********************************/
+/****************************** COMMENTS m-flyout a:link ************************************/
+/* 1-9-2023																					*/
+/*	Ctrl + H delete browser history for specific URL to clear visited status				*/
+/*	Set the color of a:visited equal to a:link												*/
+/*	Change a:link into li a:link													        */
+/*                                                                                          */
+/* 23-8-2023                                                                                */
+/*  When we set the color in .menu-flyout li a:link it applies to all links in the menu     */
+/*                                                                                          */
+/* 17-7-2023                                                                                */
+/*  'color: green' in 'li a:link' sets the color of a unvisited li-item with a hyperlink    */
+/*																					        */
+/*                                                                                          */
+/* 25-7-2023																				*/
+/*	links default settings are:																*/
+/*		links are underlined																*/
+/*		unvisited links are blue															*/
+/*		visited links are purple															*/
+/*																							*/
+/* REMARK: handles the CSS layout of an unvisited link           					        */
+/********************************************************************************************/
+    .m-flyout li a:link
+    {
+	    color: $(menu.link.color);	
+/*color: green;*/
+color: white;
+    }
+
+/* HELP HELP HELP HELP HELP HELP HELP HELP */
+/****************************** COMMENTS m-flyout li a:visited ******************************/
+/****************************** COMMENTS m-flyout a:visited *********************************/
+/* 1-9-2023																					*/
+/*	Ctrl + H delete browser history for specific URL to clear visited status				*/
+/*	Set the color of a:visited equal to a:link												*/
+/*	Change a:visited into li a:visited												        */
+/*																					        */
+/* 17-7-2023                                                                                */
+/*  'color: blue' in 'li a:visited' sets the color of a visited li-item with a hyperlink    */
+/*																					        */
+/*                                                                                          */
+/* REMARK: handles the CSS layout of an visited link           					            */
+/********************************************************************************************/
+    .m-flyout li a:visited
+    {
+	    color: $(menu.link.color);	
+/*color: blue;*/
+color: white;
+    }
+
+/* HELP HELP HELP HELP HELP HELP HELP HELP */
+/****************************** COMMENTS m-flyout li a:hover ********************************/
+/* 28-9-2023																				*/
+/*	remove text-decoration: underline to avoid the arrow is underlined						*/
+/*																							*/
+/* 23-8-2023                                                                                */
+/*  Need to change the position of a:hover in the list of pseudo classes                    */
+/*                                                                                          */
+/* 17-7-2023                                                                                */
+/*  'background-color: color' ensures the list item when hovered gets another color	        */
+/*  'color: red' in 'li a:hover' sets the color when an option is hovered                   */
+/*                                                                                          */
+/* REMARK: handles the CSS layout of a link when it is hovered		    			        */
+/********************************************************************************************/
+	.m-flyout li a:hover
+	{
+		background-color: #111111;
+/*		text-decoration: underline;*/
+/*		color: #FFB;*/
+		color: $(menu.link.hover.color);
+		color: red;
+	}
+
+/* HELP HELP HELP HELP HELP HELP HELP HELP */
+/****************************** COMMENTS m-flyout li a:active *******************************/
+/* 23-8-2023                                                                                */
+/*  Need to add li a:active to menu-wrapper                                                 */
+/*                                                                                          */
+/*                                                                                          */
+/* REMARK: handles the CSS layout of a link when it is selected		    			        */
+/********************************************************************************************/
+	.m-flyout li a:active
+	{
+color: indigo;
+	}
+
+/* HELP HELP HELP HELP HELP HELP HELP HELP */
+/****************************** COMMENTS m-flyout > ul > li:hover ul ************************/
+/* 6-9-2023                                                                                	*/
+/*	replaces the nav > ul li:hover ul which was set by fly-out menu W3C                     */
+/*                                                                                          */
+/********************************************************************************************/
+	.m-flyout > ul > li:hover ul
+	{
+		display: block;
+	}
+
+/* HELP HELP HELP HELP HELP HELP HELP HELP */
+/****************************** COMMENTS m-flyout > ul **************************************/
+/* 28-9-2023																				*/
+/*	remove 'padding: 0'																		*/
+/*	padding is set to 0 in .m-flyout ul														*/
+/*		padding is replaced by margin-left 													*/
+/*			on .m-flyout > ul > li > ul for the sub-menu									*/
+/*			on .m-flyout > ul > li for the first menu item									*/
+/*																							*/
+/* 7-9-2023                                                                                	*/
+/*	Set padding: 0 to remove the default left padding that is there for the bullets			*/
+/*	The margin: 0 is to set in .m-flyout > ul > li 											*/
+/*                                                                                          */
+/********************************************************************************************/
+	.m-flyout > ul
+	{
+/*		padding: 0; /* To remove default left padding */*/
+	}
+ 
+/****************************** COMMENTS .d-flyout > ul > li > a:after **********************/
+/* 28-9-2023																				*/
+/*	add dropdown and right arrow															*/
+/*	See: https://stackoverflow.com/questions/5281556/is-there-a-css-way-to-add-an-arrow-if-a-ul-has-a-ul-child	*/
+/*																							*/
+/* See symbols: https://symbl.cc/en/collections/arrow-symbols/								*/
+/****************************** COMMENTS .d-flyout > ul > li > a:after **********************/
+/* arrow right */
+.m-flyout > ul > li > a:after {content: '\25BA';}
+/*.m-flyout > ul > li > a:after {margin-left: 5px; content: '\1F892';}*/
+
+.m-flyout li > a:only-child:after {content: '';}
+
+
+/* HELP HELP HELP HELP HELP HELP HELP HELP */
+/****************************** COMMENTS containerZ *****************************************/
+/* 7-9-2023                                                                                	*/
+/*	removed padding because in mobile view the first LI can not be selected                 */
+/*                                                                                          */
+/********************************************************************************************/
+.containerZ 
+    {
+        position: relative;
+/*        padding: 1.5rem;*/
+    }
+
+}
+
 
 /*********************************** COMMENTS mobile-menu-main li ***************************************/
 /*********************************** COMMENTS mobile-menu-main ******************************************/
