@@ -49,16 +49,6 @@
 }
 
 
-/**TEMPLATE-SKIN ******************* COMMENTS box-sizing ****************************************/
-/* 16-11-2023											*/
-/*	set box-siging: border-box globally							*/
-/*												*/
-/*********************************** COMMENTS box-sizing ****************************************/
-	* {
-		box-sizing: border-box;
-	}
-
-
 /****************************** COMMENTS outerWrapper *******************************************/
 /* 16-11-2023											*/
 /*	move the settings margin, width, overflow						*/
@@ -169,8 +159,11 @@
 
 
 /****************************** COMMENTS element-wrapper ****************************************/
+/* 20-11-2023											*/
+/*	box-sizing: border-box can be removed because is provided globally			*/
+/*												*/
 /* 21-7-2023                                                                                	*/
-/*  'padding: 0.5%' ensures the Column is shown even when it contains no text nor value     	*/
+/*  'padding: 0.5%' ensures the element is shown even when it does not contain text      	*/
 /*  'min-height: 20px' also ensures the Column is shown                                     	*/
 /*                                                                                          	*/
 /* 25-7-2023											*/
@@ -183,7 +176,7 @@
 	{
 	    	float: left;
 		padding:  0.5%;
-		box-sizing: border-box;
+/*		box-sizing: border-box;*/
 	}
 
 
@@ -298,10 +291,21 @@
 /************************************************************************************************/
 
 
+/**TEMPLATE-SKIN ******************* COMMENTS box-sizing ****************************************/
+/* 16-11-2023											*/
+/*	set box-sizing: border-box globally							*/
+/*												*/
+/*********************************** COMMENTS box-sizing ****************************************/
+	* {
+		box-sizing: border-box;
+	}
+
+
+
 /**TEMPLATE-SKIN ******************* COMMENTS outerWrapper **************************************/
 /* 16-11-2023											*/
-/*	move the settings margin, width, overflow 						*/
-/*		within template-skin cause they are needed for the template layout		*/
+/*	Needed in template-skin to set the parameters for the template layout.			*/
+/*		parameters: margin, width, overflow						*/
 /*												*/
 /*********************************** COMMENTS outerWrapper **************************************/
 	#outerWrapper 
@@ -313,6 +317,9 @@
 	}
 
 /**TEMPLATE-SKIN ******************* COMMENTS topLineLeft ***************************************/
+/* 16-11-2023											*/
+/*	Needed in template-skin to set the parameters for the template layout.			*/
+/*												*/
 /* 15-9-2023											*/
 /*	remove float: left because it is already provided by the class element-wrapper		*/
 /*												*/
