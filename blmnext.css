@@ -161,6 +161,7 @@
 /****************************** COMMENTS element-wrapper ****************************************/
 /* 20-11-2023											*/
 /*	box-sizing: border-box can be removed because is provided globally			*/
+/*	float: left can be removed because need to set it per element				*/
 /*												*/
 /* 21-7-2023                                                                                	*/
 /*  'padding: 0.5%' ensures the element is shown even when it does not contain text      	*/
@@ -174,7 +175,7 @@
 /************************************************************************************************/
 	.element-wrapper
 	{
-	    	float: left;
+/*	    	float: left;*/
 		padding:  0.5%;
 /*		box-sizing: border-box;*/
 	}
@@ -301,7 +302,6 @@
 	}
 
 
-
 /**TEMPLATE-SKIN ******************* COMMENTS outerWrapper **************************************/
 /* 16-11-2023											*/
 /*	Needed in template-skin to set the parameters for the template layout.			*/
@@ -316,9 +316,26 @@
 	  	overflow: auto;
 	}
 
+
+/**TEMPLATE-SKIN ******************* COMMENTS header-wrapper ************************************/
+/* 16-11-2023											*/
+/*	Needed in template-skin to set the parameters for the template layout.			*/
+/*		parameters: width: 100% , display: inline-block					*/
+/*												*/
+/*********************************** COMMENTS header-wrapper ************************************/
+	.header-wrapper
+	{
+		width: 100%;
+		display: inline-block;
+	}
+
+
 /**TEMPLATE-SKIN ******************* COMMENTS topLineLeft ***************************************/
 /* 16-11-2023											*/
 /*	Needed in template-skin to set the parameters for the template layout.			*/
+/*		parameters: float: left, width: 50%						*/
+/*												*/
+/*	Removed float: left from element-wrapper						*/
 /*												*/
 /* 15-9-2023											*/
 /*	remove float: left because it is already provided by the class element-wrapper		*/
@@ -326,6 +343,7 @@
 /*********************************** COMMENTS topLineLeft ***************************************/
 	#topLineLeft
 	{
+		float: left;
 		width: 50%;
 	}
 
