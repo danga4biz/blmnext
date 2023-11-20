@@ -149,43 +149,43 @@
 	}
 
 
-/****************************** COMMENTS topLineWrapper *****************************************/
-/* 20-11-2023											*/
-/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN						*/
-/*												*/
-/* 19-10-2023											*/
-/*	change color, background, font settings							*/
-/*		added variables for topLineWrapper						*/
-/*												*/
-/* 29-6-2023											*/
-/*	replaced whole block with header-wrapper						*/
-/*												*/
-/* 25-8-2022 added										*/
-/*												*/
-/*	- overflow: auto deals with the collapsing parent					*/
-/*	to avoid the float elements appear outside their parent					*/
-/*	or use <div style='clear:both;'/>							*/
-/*		SEE: http://css-tricks.com/all-about-floats/					*/
-/*		SEE: http://www.sitepoint.com/simple-clearing-of-floats/			*/
-/*	- ??float: left eliminates the adding of gadgets in layout ??				*/
-/*	- float forces height of container to height of longest column				*/
-/*	- clear both ensures the topLineWrapper is not influenced by floats in			*/
-/*		previous elements, SEE: the-mystery-of-css-float-property			*/
-/*	- display: inline-block to ensure the middle column fits between the two floats		*/
-/*	SEE: http://thinkvitamin.com/design/everything-you-know-about-clearfix-is-wrong/	*/
-/*												*/
-/*	- removed white borderline topLineWrapper						*/
-/*	- removed font-size: 80%								*/
-/*	- added TXT.Font									*/
-/*												*/
-/*	1-9-2022										*/
-/*	- removed padding from topLineLeft, topLineMiddle and topLineRight			*/
-/*		and placed padding in topLineWrapper						*/
-/*	- float: left ensures the background color is shown					*/
-/*	- padding creates a scroll bar a the bottom, eliminate by using box-sizing		*/
-/*		SEE: https://www.w3schools.com/css/css3_box-sizing.asp				*/
-/*												*/
-/****************************** COMMENTS topLineWrapper *****************************************/
+/*********************************** COMMENTS topLineWrapper ********************************************/
+/* 20-11-2023												*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN							*/
+/*													*/
+/* 19-10-2023												*/
+/*	change color, background, font settings								*/
+/*		added variables for topLineWrapper							*/
+/*													*/
+/* 29-6-2023												*/
+/*	replaced whole block with header-wrapper							*/
+/*													*/
+/* 25-8-2022 added											*/
+/*													*/
+/*	- overflow: auto deals with the collapsing parent						*/
+/*	to avoid the float elements appear outside their parent						*/
+/*	or use <div style='clear:both;'/>								*/
+/*		SEE: http://css-tricks.com/all-about-floats/						*/
+/*		SEE: http://www.sitepoint.com/simple-clearing-of-floats/				*/
+/*	- ??float: left eliminates the adding of gadgets in layout ??					*/
+/*	- float forces height of container to height of longest column					*/
+/*	- clear both ensures the topLineWrapper is not influenced by floats in				*/
+/*		previous elements, SEE: the-mystery-of-css-float-property				*/
+/*	- display: inline-block to ensure the middle column fits between the two floats			*/
+/*	SEE: http://thinkvitamin.com/design/everything-you-know-about-clearfix-is-wrong/		*/
+/*													*/
+/*	- removed white borderline topLineWrapper							*/
+/*	- removed font-size: 80%									*/
+/*	- added TXT.Font										*/
+/*													*/
+/*	1-9-2022											*/
+/*	- removed padding from topLineLeft, topLineMiddle and topLineRight				*/
+/*		and placed padding in topLineWrapper							*/
+/*	- float: left ensures the background color is shown						*/
+/*	- padding creates a scroll bar a the bottom, eliminate by using box-sizing			*/
+/*		SEE: https://www.w3schools.com/css/css3_box-sizing.asp					*/
+/*													*/
+/*********************************** COMMENTS topLineWrapper ********************************************/
 	#topLineWrapper
 	{
 		background: $(topLineWrapper.BG.Color);
