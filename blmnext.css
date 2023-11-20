@@ -48,6 +48,17 @@
 
 }
 
+
+/**TEMPLATE-SKIN ******************* COMMENTS box-sizing ****************************************/
+/* 16-11-2023											*/
+/*	set box-siging: border-box globally							*/
+/*												*/
+/*********************************** COMMENTS box-sizing ****************************************/
+	* {
+		box-sizing: border-box;
+	}
+
+
 /****************************** COMMENTS outerWrapper *******************************************/
 /* 16-11-2023											*/
 /*	move the settings margin, width, overflow						*/
