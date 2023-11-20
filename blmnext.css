@@ -422,7 +422,7 @@
 /*********************************** COMMENTS centerBarWrapper **********************************/
 	#centerBarWrapper
 	{
-		border-style: none;
+/*		border-style: none;*/
 	}
 
 /**TEMPLATE-SKIN ******************* COMMENTS centerBarLeft *************************************/
@@ -517,7 +517,7 @@
 /*********************************** COMMENTS bottomLineWrapper *********************************/
 	#bottomLineWrapper
 	{
-		border-style: none;
+/*		border-style: none;*/
 	}
 
 /*********************************** COMMENTS bottomLineMiddle **********************************/
