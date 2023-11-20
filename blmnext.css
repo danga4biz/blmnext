@@ -1423,8 +1423,70 @@ border-top-color: initial;
 }
 
 /********************************************************************************************************/
-/*********************************** BEGIN DESKTOP MENU LAYOUT d-flyout *********************************/
+/*********************************** END DESKTOP MENU LAYOUT d-flyout ***********************************/
 /********************************************************************************************************/
+
+/********************************************************************************************************/
+/*********************************** END MENU SETTINGS **************************************************/
+/********************************************************************************************************/
+
+
+/*********************************** COMMENTS topMenuFlexWrapper .flex-container ************************/
+/* 22-9-2023												*/
+/*	remove flex-wrap: wrap;	and set 'flex-direction: column						*/
+/*		since topLeftBar is no part of the menu, which is a flex container - d-flyout, 		*/
+/*		but part of topMenuFlex2, which is also a flex-container it works nicer to set 		*/
+/*		the flex-direction of this flex-container to column					*/
+/*													*/
+/*	add flex-wrap: wrap;										*/
+/*		allow flex items to wrap to make sure the menu width remains FULL container width	*/
+/*													*/
+/*********************************** COMMENTS topMenuFlexWrapper .flex-container ************************/
+	@media screen and (max-width: 800px) 
+	{
+		#topMenuFlexWrapper.flex-container 
+		{
+			flex-direction: column;
+/*			flex-wrap: wrap;	/* allow flex items to wrap */			*/
+		}
+	}
+
+
+/*********************************** COMMENTS bottomContainerWrapper .flex-container ********************/
+/* 9-06-2023												*/
+/*	Set flex-direction to column for mobile view							*/
+/*	Moved below d-flyout to ensure it is being used							*/
+/*													*/
+/*********************************** COMMENTS bottomContainerWrapper .flex-container ********************/
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+
+	@media screen and (max-width: 700px) 
+	{
+		#bottomContainerWrapper.flex-container 
+		{
+			flex-direction: column;
+		}
+
+		#bottomContainerWrapper .container-items
+		{
+			width: 100%;
+		}
+
+/* 11-9-2023 prepared to use d-flyout instead of m-flyout
+
+		.d-flyout ul
+		{
+			flex-direction: column;
+		}
+
+		.d-flyout > ul > li
+		{
+			text-align: left;
+		}
+ 11-9-2023 prepared to use d-flyout instead of m-flyout */
+
+	}
 
 
 
@@ -1483,9 +1545,6 @@ border-top-color: initial;
 
 
 
-/********************************************************************************************************/
-/*********************************** BEGIN MENU SETTINGS ************************************************/
-/********************************************************************************************************/
 
 
 
