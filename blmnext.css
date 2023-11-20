@@ -350,7 +350,7 @@
 /**TEMPLATE-SKIN ******************* COMMENTS topLineRight **************************************/
 /* 16-11-2023											*/
 /*	Needed in template-skin to set the parameters for the template layout.			*/
-/*		parameters: float: left								*/
+/*		parameters: float: right							*/
 /*												*/
 /* 15-9-2023											*/
 /*	set float: right to overrule class element-wrapper					*/
@@ -384,6 +384,12 @@
 
 
 /**TEMPLATE-SKIN ******************* COMMENTS centerBarLeft *************************************/
+/* 16-11-2023											*/
+/*	Needed in template-skin to set the parameters for the template layout.			*/
+/*		parameters: float: left, width: 10%						*/
+/*												*/
+/*	float: left is set here because it is removed element-wrapper				*/
+/*												*/
 /* 5-10-2023											*/
 /*	remove background collor lightgreen, this is the color surrounding the post page	*/
 /*												*/
@@ -398,14 +404,13 @@
 /**TEMPLATE-SKIN ******************* COMMENTS centerBarRight ************************************/
 /* 16-11-2023											*/
 /*	Needed in template-skin to set the parameters for the template layout.			*/
-/*		parameters: float: left, width: 50%						*/
+/*		parameters: float: right, width: 20%						*/
 /*												*/
-/*	float: left is set here because removed float: left from element-wrapper		*/
-/*												*/
-
 /* 5-10-2023											*/
 /*	remove background collor grey, this is the color surrounding the post page		*/
 /*												*/
+/* 15-9-2023											*/
+/*	set float: right to overrule class element-wrapper					*/
 /*												*/
 /*********************************** COMMENTS centerBarRight ************************************/
 	#centerBarRight
@@ -415,6 +420,12 @@
 	}
 
 /**TEMPLATE-SKIN ******************* COMMENTS centerBarMiddle ***********************************/
+/* 16-11-2023											*/
+/*	Needed in template-skin to set the parameters for the template layout.			*/
+/*		parameters: float: left, width: 70%						*/
+/*												*/
+/*	float: left is set here because it is removed element-wrapper				*/
+/*												*/
 /* 5-10-2023											*/
 /*	remove background collor yellow, this is the color surrounding the post page		*/
 /*												*/
