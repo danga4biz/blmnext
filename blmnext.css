@@ -237,6 +237,37 @@
 }
 
 
+/****************************** COMMENTS middleContainerWrapper *************************************************/
+/* 20-11-2023													*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN								*/
+/*                                                                      	                    		*/
+/*                                                                      	                    		*/
+/* 21-10-2023													*/
+/*	remove border settings											*/
+/*														*/
+/* 21-10-2023													*/
+/*	change color, background, font settings									*/
+/*		added variables for middleContainerWrapper							*/
+/*														*/
+/* 19-10-2023													*/
+/*	add background color and font variables									*/
+/*														*/
+/* 18-10-2023													*/
+/* container to present the sheets 										*/
+/*														*/
+/****************************** COMMENTS middleContainerWrapper *************************************************/
+	#middleContainerWrapper
+	{
+		background: $(middleContainerWrapper.BG.Color); 
+		color: $(middleContainerWrapper.TXT.Color);
+		font: $(middleContainerWrapper.TXT.Font);
+
+		background-color: var(--middleContainerWrapper-BG-color, var(--root-BG-color, white ));
+<!--		color: var(--middleContainerWrapper-TXT-color);-->
+<!--		font-family: var(--middleContainerWrapper-TXT-font-family, var(--root-font-family, ))-->
+	}
+
+
 /************************** COMMENTS centerBarWrapper ****************************** 23-7-2023 **/
 /* 21-10-2023											*/
 /*	change color, background, font settings							*/
@@ -296,6 +327,9 @@
 
 
 /****************************** COMMENTS bottomContainerWrapper *************************************************/
+/* 20-11-2023													*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN								*/
+/*														*/
 /* 21-10-2023													*/
 /*	change color, background, font settings									*/
 /*		added variables for bottomContainerWrapper							*/
@@ -1679,6 +1713,35 @@ border-top-color: initial;
 	}
 
 
+/****************************** COMMENTS middleContainerWrapper *************************************************/
+/* 20-11-2023													*/
+/*	Needed here to REMOVE the settings of the border that are used for the template layout			*/
+/*	otherwise they are also displayed on the website							*/
+/*														*/
+/* 16-11-2023													*/
+/*	Needed in template-skin to set the parameters for the template layout.					*/
+/*		parameters: border-color, border-top-style, border-width					*/
+/*														*/
+/* 21-10-2023													*/
+/*	remove border settings											*/
+/*														*/
+/* 21-10-2023													*/
+/*	change color, background, font settings									*/
+/*		added variables for middleContainerWrapper							*/
+/*														*/
+/* 19-10-2023													*/
+/*	add background color and font variables									*/
+/*														*/
+/* 18-10-2023													*/
+/* container to present the sheets 										*/
+/*														*/
+/****************************** COMMENTS middleContainerWrapper *************************************************/
+	#middleContainerWrapper
+	{
+		border-style: none;
+	}
+
+
 /**TEMPLATE-SKIN ******************* COMMENTS centerBarWrapper **********************************/
 /* 20-11-2023											*/
 /*	Needed here to REMOVE the settings of the border that are used for the template layout	*/
@@ -1820,6 +1883,7 @@ border-top-color: initial;
 	{
 		text-align: center;
 	}
+
 
 
 /*********************************** COMMENTS adsense-wrapper *******************************************/
