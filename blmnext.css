@@ -645,6 +645,7 @@ color: white;
 /*   	'text-align: left' in 'li a' to display list-items starting left				*/
 /*********************************** COMMENTS mobile-menu-main ******************************************/
 @media screen and (max-width: 800px) {
+
 	.mobile-menu-main
 	{
         	display: block;
@@ -698,6 +699,31 @@ color: white;
         background-color: yellow;
 		display: none;
     }
+
+
+/************************************************************************************************/
+/* 29-9-2023											*/
+/*	set max-width from 600 to 800 (769 seems to be the max width for tablets		*/
+/*												*/
+/* 7-9-2023											*/
+/*	z-index: 2 ensure the hamburger menu is always shown on top in mobile			*/
+/************************************************************************************************/
+/* On screens that are 600px or less, set the background color to lightgreen */
+@media screen and (max-width: 800px) { 
+
+	.m-menu-middle
+    {
+    	background-color: lightgreen;
+		display: block;
+		text-align: left;
+z-index: 2;
+    }
+
+	.m-menu-hide
+    {
+		display: none;
+    }
+}
 
 
 /********************************************************************************************************/
