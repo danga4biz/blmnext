@@ -483,23 +483,23 @@ color: white;
 	}
 
 
-/****************************** COMMENTS bottomLineWrapper **************************************/
-/* 20-11-2023											*/
-/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN						*/
-/*												*/
-/* 19-10-2023											*/
-/*	change color, background, font settings							*/
-/*		added variables for bottomLineWrapper						*/
-/*												*/
-/* 29-6-2023											*/
-/*	replaced whole block with header-wrapper						*/
-/*												*/
-/* 25-8-2022 added										*/
-/*												*/
-/* SEE topLineWrapper for history								*/
-/* USE in combination with footer-wrapper							*/
-/*												*/
-/****************************** COMMENTS bottomLineWrapper **************************************/
+/*********************************** COMMENTS bottomLineWrapper *****************************************/
+/* 20-11-2023												*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN							*/
+/*													*/
+/* 19-10-2023												*/
+/*	change color, background, font settings								*/
+/*		added variables for bottomLineWrapper							*/
+/*													*/
+/* 29-6-2023												*/
+/*	replaced whole block with header-wrapper							*/
+/*													*/
+/* 25-8-2022 added											*/
+/*													*/
+/* SEE topLineWrapper for history									*/
+/* USE in combination with footer-wrapper								*/
+/*													*/
+/*********************************** COMMENTS bottomLineWrapper *****************************************/
 	#bottomLineWrapper 
 	{
 		background: $(bottomLineWrapper.BG.Color);
@@ -681,6 +681,22 @@ color: white;
 /*												*/
 /*********************************** COMMENTS topLineWrapper ************************************/
 	#topLineWrapper
+	{
+		border-style: none;
+	}
+
+
+/**TEMPLATE-SKIN ******************* COMMENTS topMenuFlexWrapper ********************************/
+/* 20-11-2023											*/
+/*	Needed here to REMOVE the settings of the border that are used for the template layout	*/
+/*	otherwise they are also displayed on the website					*/
+/*												*/
+/* 16-11-2023											*/
+/*	Needed in template-skin to set the parameters for the template layout.			*/
+/*		parameters: border-color, border-top-style, border-width			*/
+/*												*/
+/*********************************** COMMENTS topMenuFlexWrapper ********************************/
+	#topMenuFlexWrapper
 	{
 		border-style: none;
 	}
