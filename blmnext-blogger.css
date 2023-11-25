@@ -50,9 +50,16 @@
 
 }
 
-#outerWrapper
-{
-margin: 10px;
+	#outerWrapper
+	{
+		margin: 10px;
+		background-color: var(--outerWrapper-BG-color, var(--root-BG-color, white ));
+<!--		color: var(--outerWrapper-TXT-color);-->
+<!--		font-family: var(--outerWrapper-TXT-font-family, var(--root-font-family, ))-->
+		margin: 10px;
+	}
+
+	
 }
 	<!-- outerwrapper.BG.Color not needed -->
 	<Group description="outerWrapper" selector="body">
