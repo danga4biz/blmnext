@@ -57,8 +57,6 @@
 		margin: 80px;
 	}
 
-	
-}
 	<!-- outerwrapper.BG.Color not needed -->
 	<Group description="outerWrapper" selector="body">
 		<Variable name="outerWrapper.BG.Color" 
