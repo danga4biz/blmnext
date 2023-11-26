@@ -52,8 +52,6 @@
 
 	#outerWrapper
 	{
-<!--		color: var(--outerWrapper-TXT-color);-->
-<!--		font-family: var(--outerWrapper-TXT-font-family, var(--root-font-family, ))-->
 		margin: 80px;
 	}
 
