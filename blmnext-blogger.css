@@ -1,3 +1,18 @@
+
+/* ============================================================================================================ */
+/* 										NON-BLOGGER Variable definitions										*/
+/* ============================================================================================================ */
+
+/*************************************** COMMENTS var() Function ************************************************/
+/* 22-9-2023                                                                                    				*/
+/*																												*/
+/* :root can be useful for declaring global CSS variables:														*/
+/* The :root CSS pseudo-class matches the root element of a tree representing the document.						*/
+/* In HTML, :root represents the html - element and is identical to the selector html,							*/
+/* except that its specificity is higher.																		*/
+/* 																												*/
+/*************************************** COMMENTS var() Function ************************************************/
+
 :root
 {
 	--main-bg-color: teal;
@@ -41,3 +56,23 @@
 	{
 		margin: 50px;
 	}
+
+
+	.container-items
+	{
+
+		background-color: red;
+		
+/*		float: left;*/
+/*		box-sizing: border-box;*/
+/*		flex-grow: 1;*/
+
+		flex: auto;
+		padding-left: 5px;
+		padding-right: 5px;
+
+		background-color: var(--container-items-BG-color, var(--root-BG-color, white ));
+<!--		color: var(--outerWrapper-TXT-color);-->
+<!--		font-family: var(--outerWrapper-TXT-font-family, var(--root-font-family, ))-->
+	}
+
