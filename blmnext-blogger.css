@@ -60,3 +60,7 @@
 body {
 	background: red;
 }
+
+	* {
+		box-sizing: border-box;
+	}
